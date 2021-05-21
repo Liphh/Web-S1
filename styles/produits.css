@@ -1,0 +1,56 @@
+/* Ensemble de la page */
+
+#bloc_page {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(21, 34, 50, 0.9);
+}
+
+/* bloc présentation du produit */
+
+#presentation_produit {
+    width: 70%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#presentation_produit img{
+    width: 200px;
+    height: 300px;
+}
+
+#presentation_produit ul{
+    list-style-type: none;
+}
+
+#presentation_produit span{
+    color: red;
+}
+
+.stock {
+    color: greenyellow;
+}
+
+/* Bloc de l'iframe */
+
+iframe {
+    max-width: 100%;
+}
+
+/* Bloc de l'avis des clients */
+
+main form input[type="search"], 
+main form input[type="submit"],
+textarea {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px;
+    appearance: none;
+    background: #213450;
+    color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 15px 0 rgba(0,0,0,0.12);
+    outline: none;
+}

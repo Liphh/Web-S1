@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/catalogue.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>GamesDrop - Catalogue</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div id="logo"><a href="../index.html">GamesDrop</a></div>
+            <div class="search">
+                <form method="GET" action="catalogue.html">
+                    <input type="search" placeholder="Recherche" />
+                    <input type="submit" value="🔍" />
+                </form>
+            </div>
+            <ul id="links">
+                <li><a class="link" href="panier.html">Panier</a></li>
+                <li><a class="link" href="details.html">Infos pratique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="bloc_catalogue">
+        <aside>
+            <h1>Recherche avancées</h1>
+            <form>
+                <div>
+                    <input type="search" placeholder="Recherche">
+                </div>
+                <div id="input_prix">
+                    <input type="number" placeholder="EUR min">
+                    <span>à</span>
+                    <input type="number" placeholder="EUR max">
+                </div>
+                <div>
+                    <label for="note">Notes :</label>
+                    <input id="note" type="range" min="0" max="5" step="1">
+                </div>
+                <div>
+                    <label for="tri">Trier par :</label>
+                    <select id="tri">
+                        <option value="Nom">Nom</option>
+                        <option value="Croissant">Prix (croissant)</option>
+                        <option value="Decroissant">Prix (décroissant)</option>
+                        <option value="Notes">Notes</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="submit" value="Recherchez">
+                </div>
+            </form>
+        </aside>
+        
+        <div id="produits">
+            
+            <div class="articles">
+                <a href="produit1.html"><img src="../assets/Box_BOTW.jpg" alt="Boite Zelda BOTW"></a>
+
+                <div class="infos_jeux">
+                    <p class="titre_jeu">The Legend of Zelda: Breath of the wild</p>
+                    <p  class="prix"i                        <span class="prix_promos">34.99€</span>
+                        <span class="prix_conseille">51.95€</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="articles">
+                <a href="produit2.html"><img src="../assets/Box_HWAoC.jpg" alt="Boite HWAoC"></a>
+
+                <div class="infos_jeux">
+                    <p class="titre_jeu">Hyrule Warriors : L'ère du fléau</p>
+                    <p class="prix">
+                        <span class="prix_promos">39.99€</span>
+                        <span class="prix_conseille">59.99€</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="articles">
+                <a href="produit3.html"><img src="../assets/Box_MO.jpg" alt="Boite SMO"></a>
+
+                <div class="infos_jeux">
+                    <p class="titre_jeu">Super Mario Odyssey</p>
+                    <p class="prix">
+                        <span class="prix_promos">29.99€</span>
+                        <span class="prix_conseille">45.99€</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="articles">
+                <a href="produit4.html"><img src="../assets/Box_3DAS.jpg" alt="Boite SM3DAS"></a>
+
+                <div class="infos_jeux">
+                    <p class="titre_jeu">Super Mario 3D All Stars</p>
+                    <p class="prix">
+                        <span class="prix_promos">34.49€</span>
+                        <span class="prix_conseille">44.49€</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="retour_haut">
+            <a href="#top"><img src="../assets/scroll_top_icon.png" alt="image retour en haut"></a>
+        </div>
+    </main>
+
+</body>
+
+</html>

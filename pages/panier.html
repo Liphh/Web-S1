@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/panier.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>GamesDrop - Panier</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div id="logo"><a href="../index.html">GamesDrop</a></div>
+            <div class="search">
+                <form method="GET" action="catalogue.html">
+                    <input type="search" placeholder="Recherche" />
+                    <input type="submit" value="🔍" />
+                </form>
+            </div>
+            <ul id="links">
+                <li><a class="link" href="panier.html">Panier</a></li>
+                <li><a class="link" href="details.html">Infos pratique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="paiement">
+            <form method="GET" action="panier.html">
+                <div id="part1">
+                    <p>Informations personnelles</p>
+                    <div>
+                        <label for="Nom">Nom <span>*</span></label><br />
+                        <input type="text" id="Nom" placeholder="Nom" required>
+                    </div>
+                    <div>
+                        <label for="Prenom">Prenom <span>*</span></label><br />
+                        <input type="text" id="Prenom" placeholder="Prenom" required>
+                    </div>
+                    <div>
+                        <label for="mail">Adresse mail <span>*</span></label><br />
+                        <input type="email" id="mail" placeholder="Adresse mail" required>
+                    </div>
+                    <div>
+                        <label for="adresse">Adresse <span>*</span></label><br />
+                        <input type="text" id="adresse" placeholder="Adresse" required>
+                    </div>
+                    <div class="Adresse_input">
+                        <input type="text" placeholder="Ville" required>
+                    </div>
+                    <div class="Adresse_input">
+                        <input type="number" placeholder="Code Postal" required>
+                    </div>
+                </div>
+
+                <div id="part2">
+                    <p>Informations bancaires</p>
+                    <div>
+                        <label for="Num_Carte">N° de Carte <span>*</span></label><br />
+                        <input type="text" id="Num_Carte" required>
+                    </div>
+                    <div>
+                        <label for="titulaire">Titulaire de la carte <span>*</span></label><br />
+                        <input type="text" id="titulaire" required>
+                    </div>
+                    <div>
+                        <label for="Date_fin">Date de fin de validité <span>*</span></label><br />
+                        <input type="text" id="Date_fin" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="Crypto">Cryptogramme <span>*</span></label><br />
+                        <input type="number" id="Crypto" placeholder="CVC" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Valider le Paiement">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="panier">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Titre</th>
+                        <th>Quantité</th>
+                        <th>Prix</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../assets/Box_HWAoC.jpg" alt="Boite de HW"></td>
+                        <td>Hyrule Warriors : l'ère du fléau</td>
+                        <td>
+                            <label for="quantite2"></label>
+                            <select name="quantite" id="quantite2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>39.99€</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../assets/Box_MO.jpg" alt="Boite de SMO"></td>
+                        <td>Super Mario Odyssey</td>
+                        <td>
+                            <label for="quantite1"></label>
+                            <select name="quantite" id="quantite1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td>29.99€</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>69.98€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="retour_haut">
+            <a href="#top"><img src="../assets/scroll_top_icon.png" alt="image retour en haut"></a>
+        </div>
+    </main>
+</body>
+
+</html>

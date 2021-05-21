@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/produits.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>GamesDrop - Super Mario Odyssey</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div id="logo"><a href="../index.html">GamesDrop</a></div>
+            <div class="search">
+                <form method="GET" action="catalogue.html">
+                    <input type="search" placeholder="Recherche" />
+                    <input type="submit" value="🔍" />
+                </form>
+            </div>
+            <ul id="links">
+                <li><a class="link" href="panier.html">Panier</a></li>
+                <li><a class="link" href="details.html">Infos pratique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="bloc_page">
+            <div id="presentation_produit">
+                <img src="../assets/Box_MO.jpg" alt="Boite de Zelda BOTW">
+                <ul>
+                    <li>
+                        <h1>Super Mario Odyssey</h1>
+                    </li>
+                    <li>
+                        <p>Prix : <span>29.99€</span></p>
+                    </li>
+                    <li>
+                        <p class="stock"> En stock</p>
+                    </li>
+                    <li>
+                        <form action="panier.html">
+                            <input type="submit" value="Ajoutez au panier">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="synopsis">
+                <h2>Détails :</h2>
+                <p>
+                    Rejoignez Mario dans une vaste aventure en 3D à travers le globe et servez-vous de ses incroyables
+                    nouvelles capacités pour récolter des lunes afin d'alimenter votre vaisseau, l'Odyssée, et de venir
+                    à la rescousse de la Princesse Peach qui a une nouvelle fois été kidnappée par Bowser !
+                </p>
+
+                <p>
+                    Mario revient dans une aventure en 3D de style bac à sable pour la première fois depuis les deux
+                    précédents à titres succès Super Mario 64 sorti en 1997 et Super Mario Sunshine en 2002. Ce titre
+                    inédit regorge de secrets et de surprises, et grâce aux nouveaux coups de Mario comme le lancer de
+                    chapeau ou la chapimorphose, vous disposerez d'expériences de jeu amusantes et captivantes qui ne
+                    ressemblent à aucune autre dans les précédents jeux Mario. Préparez-vous à être transporté vers des
+                    mondes étranges et incroyables loin du Royaume Champignon !
+                </p>
+            </div>
+
+            <div id="vidéo">
+                <h2>Vidéo :</h2>
+                <iframe width="475" height="250" src="https://www.youtube.com/embed/SupQ7NAQU9g"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id="avis">
+                <h2>Avis :</h2>
+                <p>Votre avis compte !</p>
+                <p>Partagez ce que vous pensez de ce produit avec les autres utilisateurs</p>
+                <form action="produit3.html">
+                    <textarea id="avis_clients" rows="10" cols="50"></textarea> <br>
+                    <input type="submit" value="Envoyez">
+                </form>
+            </div>
+        </div>
+
+
+        <div id="retour_haut">
+            <a href="#top"><img src="../assets/scroll_top_icon.png" alt="image retour en haut"></a>
+        </div>
+    </main>
+</body>
+
+</html>

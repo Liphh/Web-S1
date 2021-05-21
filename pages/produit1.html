@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/produits.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
+    <title>GamesDrop - Zelda BOTW</title>
+</head>
+
+<body>
+    <header id="top">
+        <nav>
+            <div id="logo"><a href="../index.html">GamesDrop</a></div>
+            <div class="search">
+                <form method="GET" action="catalogue.html">
+                    <input type="search" placeholder="Recherche" />
+                    <input type="submit" value="🔍" />
+                </form>
+            </div>
+            <ul id="links">
+                <li><a class="link" href="panier.html">Panier</a></li>
+                <li><a class="link" href="details.html">Infos pratique</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="bloc_page">
+            <div id="presentation_produit">
+                <img src="../assets/Box_BOTW.jpg" alt="Boite de Zelda BOTW">
+                <ul>
+                    <li>
+                        <h1>The Legend of Zelda Breath of the Wild</h1>
+                    </li>
+                    <li>
+                        <p>Prix : <span>34.99€</span></p>
+                    </li>
+                    <li>
+                        <p class="stock"> En stock</p>
+                    </li>
+                    <li>
+                        <form action="panier.html">
+                            <input type="submit" value="Ajoutez au panier">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="bloc_synopsis">
+                <h2>Détails :</h2>
+                <p>Entrez dans un monde d'aventure </p>
+                <p>
+                    Oubliez tout ce que vous savez sur les jeux The Legend of Zelda.
+                    Plongez dans un monde de découverte, d'exploration et d'aventure dans The Legend of Zelda:
+                    Breath of
+                    the Wild, un nouveau jeu qui vient bouleverser la série à succès. Voyagez à travers champs,
+                    traversez des forêts et grimpez sur des sommets dans votre périple où vous explorez le royaume
+                    d'Hyrule en ruines à travers cette aventure à ciel ouvert.
+                </p>
+            </div>
+
+            <div id="bloc_video">
+                <h2>Vidéo :</h2>
+                <iframe width="475" height="250" src="https://www.youtube.com/embed/vumJiWdxQSs"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div id="avis">
+                <h2>Avis :</h2>
+                <p>Votre avis compte !</p>
+                <p>Partagez ce que vous pensez de ce produit avec les autres utilisateurs</p>
+                <form action="produit1.html">
+                    <textarea id="avis_clients" rows="10" cols="50"></textarea> <br>
+                    <input type="submit" value="Envoyez">
+                </form>
+            </div>
+        </div>
+
+
+        <div id="retour_haut">
+            <a href="#top"><img src="../assets/scroll_top_icon.png" alt="image retour en haut"></a>
+        </div>
+    </main>
+</body>
+
+</html>

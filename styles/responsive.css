@@ -1,0 +1,55 @@
+@media screen and (max-width:580px) {
+    #promotions {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:565px) {
+
+    /* Regle  de la barre de naviguation */
+
+    header > nav {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    header > nav > * {
+        margin: 0.5em 0;
+    }
+
+    /* Regle de la page d'accueil */
+
+    #presentation {
+        flex-direction: column;
+    }
+
+    #presentation img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    /* Regle de la page catalogue */
+
+    #bloc_catalogue {
+        flex-direction: column;
+    }
+
+    aside,#produits {
+        margin: 10px 8vw;
+        width: 84vw;
+        box-sizing: border-box;
+    }
+
+    #produits {
+        justify-content: center;
+    }
+
+    /* Regle des pages des produits */
+
+    #presentation_produit {
+        flex-direction: column;
+    }
+
+}
+

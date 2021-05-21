@@ -1,0 +1,118 @@
+/* Polices personnalisées */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Elements prinicpaux */
+
+body {
+    margin: 0;
+    background-image: url("../assets/fond_ecran.jpg");
+    color: rgb(170, 170, 170); 
+    font-family: 'Open Sans';
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Naviguation */
+
+nav {
+    width: 100vw;
+    background-color: rgba(21, 34, 50, 0.7);
+    padding: 1em 1.25em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: background-color 0.7s;
+}
+
+nav:hover {
+    background-color: rgba(21, 34, 50, 1);
+}
+
+nav #logo {
+    font-size: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+nav a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: grey;
+    position: relative;
+    top: 2px;
+    transition: width .3s linear;
+    margin: auto;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav ul#links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul#links li {
+    float: left;
+    padding: 0 16px;
+}
+
+nav ul#links li:first-child {
+   padding-left: 0;
+}
+
+
+nav form input[type="search"], 
+nav form input[type="submit"] {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px;
+    appearance: none;
+    background: #213450;
+    color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 15px 0 rgba(0,0,0,0.12);
+    outline: none;
+}
+
+nav form input[type="submit"] {
+    padding: 3px 4px;
+    float: right;
+}
+
+/* Bouton de retour en haut de page */
+
+#retour_haut img {
+    height: 50px;
+    width: 50px;
+}
+
+#retour_haut {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 15px;
+    background-color: rgba(27, 70, 122, 0.7);
+    border-radius: 45%;
+    transition: background-color 0.7s;
+}
+
+#retour_haut:hover {
+    background-color:  rgba(27, 70, 122, 1);;
+}

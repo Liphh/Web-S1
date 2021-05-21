@@ -1,0 +1,106 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* formulaire de recherche avancées */
+
+aside {
+    background-color: rgba(21, 34, 50, 0.7);
+    margin: 20px 15px;
+    padding: 5px 0px 10px 15px;
+    border-radius: 10px;
+}
+
+aside h1 {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+#input_prix input{
+    width: 35%;
+}
+
+aside form input, select{
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px;
+    appearance: none;
+    background: #213450;
+    color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 15px 0 rgba(0,0,0,0.12);
+    outline: none;
+}
+
+
+
+/* Bloc des différents produits */
+
+#produits {
+    background-color: rgba(21, 34, 50, 0.7);
+    margin: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Les différents produits */
+
+
+.articles {
+    width: 230px;
+    margin: 8px;
+    background-color: rgba(21, 31, 46, 0.9);
+    border-radius: 0 0 15px 15px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles img {
+    height: 350px;
+    width: 230px;
+}
+
+/* Description des produits */
+
+.infos_jeux {
+    width: 230px;
+}
+
+.titre_jeu {
+    font-size: 0.8em;
+    color: rgb(185, 185, 185);
+    font-style: italic;
+    text-align: center;
+    margin: 8px 0;
+}
+
+
+.titre_jeu + p {
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+
+.prix_promos {
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+    float: left;
+}
+
+.prix_conseille {
+    font-size: 0.7em;
+    color: red;
+    text-decoration: line-through;
+    float: right;
+    text-align: right;
+}

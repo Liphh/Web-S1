@@ -1,0 +1,80 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Formulaire de paiement */
+
+#paiement {
+    width: auto;
+    background-color: rgba(21, 34, 50, 0.9);
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 0px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+#paiement p {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+#paiement form {
+    display: flex;
+    flex-direction: row;
+}
+
+#paiement #part2 {
+    margin-left: 15px;
+}
+
+#paiement div {
+    margin-top: 10px;
+}
+
+#paiement .Adresse_input {
+    margin-top: 5px;
+}
+
+#paiement input[type=submit] {
+    margin-top: 10px;
+}
+
+form span {
+    color: red;
+}
+
+main form input, select {
+    border: 1px solid grey;
+    border-radius: 4px;
+    padding: 4px;
+    appearance: none;
+    background: #213450;
+    color: white;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 15px 0 rgba(0,0,0,0.12);
+    outline: none;
+}
+
+/* Tableau de liste d'articles */
+
+#panier {
+    width: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 0px 10px 10px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: rgba(21, 34, 50, 0.9);
+}
+
+table img {
+    width: 50px;
+    height: 80px;
+}
+
+td,th {
+    border: 1px solid black;
+}
